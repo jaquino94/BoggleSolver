@@ -4,6 +4,10 @@
 #include <fstream>
 #define BOGGLESOLVER_H
 
+/*
+ * The Boggle Solver Interface
+ * Note: the ofstream object is option and can be omitted. Just change the function parameter list here and the cpp file.
+ */
 void SolveBoggle(int startRow, int startCol, Dictionary& loadedDictionary, Dictionary& wordsFound, int stepBoard[][4], int step, char board[][4], bool& foundWord, std::string currPrefix, std::ofstream& output);
 
 void resetBoard(int[][4]);

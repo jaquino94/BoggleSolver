@@ -9,6 +9,11 @@ Node::Node(){
 	isWord = false;
 }
 
+/*
+ * We have to two constructors: 
+ * 	1) Doesn't take in a text file, but just establishes the root of the tree
+ * 	2) Takes in a text file and creates the tree
+ */
 Dictionary::Dictionary(){
 	root = new Node;
 	wordCount = 0;
@@ -27,6 +32,10 @@ Dictionary::Dictionary(std::string file){
 	input.close();
 }
 
+/*
+ * The function creates new Nodes for each letter of the word that we are adding. 
+ * At the end, we set the isWord flag to be true. This will be useful with our Boggle Solver class.
+ */
 void Dictionary::addWord(std::string word){
 	Node* currNode = root; 
 
@@ -41,6 +50,10 @@ void Dictionary::addWord(std::string word){
 	wordCount++;
 }
 
+/*
+ * The isPrefix returns false if any of the letter's, from the parameter we passed in, is a null pointer.
+ * This is how the program knows whether to keep going with a sequence of letters or not. 
+ */
 bool Dictionary::isPrefix(std::string word){
 	Node* temp = root;
 
@@ -55,6 +68,11 @@ bool Dictionary::isPrefix(std::string word){
 	return true;
 }	
 
+/*
+ * The function traverses through the tree based on the letters of the word passed in. 
+ * If we reach the end of the word, we check if the flag is true or not. 
+ * The fuction also checks if we hit a null pointer before reaching the end of the word.
+ */
 bool Dictionary::isWord(std::string word){
 	Node* temp = root;
 
@@ -69,6 +87,10 @@ bool Dictionary::isWord(std::string word){
 	return temp->isWord;
 }	
 
+/*
+ * THE FOLLOWING FUNCTIONS ARE OPTIONAL.
+ * THE PROGRAM WILL STILL FUNCTION CORRECTLY EVEN WITHOUT THEM.
+ */
 void Dictionary::printWords(std::string prefix){
 	Node* currentNode = root;
 	for(int i = 0; i < (int)prefix.size(); i++){
