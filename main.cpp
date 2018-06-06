@@ -13,7 +13,7 @@ int main(){
 	char userInput;
 	bool printBoard = false;
 	Dictionary wordsFound;
-	Dictionary loadedDictionary("dictionary.txt");
+	Dictionary loadedDictionary("words_alpha.txt");
 	std::cout << "DICTIONARY INITIALIZED WITH " << loadedDictionary.getWordCount() << " WORDS" << std::endl;
 
 	int stepBoard[BOARD_MAX_SIZE][BOARD_MAX_SIZE];
