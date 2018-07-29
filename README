@@ -14,3 +14,14 @@ Having an array of Node pointers is much faster in terms of the total number of 
 	EX: If our longest word in the Dictionary is 23 letters long, that's biggest possible number of comparisons that we will do.
 
 The Boggle Solver class utilizes the Dictionary class to find all the possible words on the given board. We use recusion to traverse the board and check all possible directions around each letters. This class relies on the flags that the Dictionary class has in order to check if a direction leads to a word or not. This saves the program in checking by not letting it go in blindly in all possible directions if the end the word doesn't exist.
+
+
+![alt tag](https://github.com/jaquino94/BoggleSolver/blob/master/imgs/UserInput.png "The program will ask the user to input the letters on the board")
+
+![alt tag](https://github.com/jaquino94/BoggleSolver/blob/master/imgs/InputBoard.png "The program will confirm the user input by showing it on a board. It will also ask if the user wants to see the board, showing where the word is found")
+
+![alt tag](https://github.com/jaquino94/BoggleSolver/blob/master/imgs/FoundWords.png "The program showing the words found, and the where on the found they are found, along with the steps for each letter of the found word")
+
+![alt tag](https://github.com/jaquino94/BoggleSolver/blob/master/imgs/NoBoardShown.png "If the user doesn't choose to show the board, the program will just list out all the words found")
+
+![alt tag](https://github.com/jaquino94/BoggleSolver/blob/master/imgs/TotalWordsFound.png "At the end, the program will show how many words are found with the given word")
