@@ -6,7 +6,18 @@ The program has two major parts: the Dictionary class and the BoggleSolver class
 
 The Dictionary class creates a tree data structure where each level is an array of Node pointers. 
 Instead storing each word from the text file that we are reading from, we are reading each letter and have the 
-index that correspond to that letter to the next node
+index that correspond to that letter to the next node.
+```C++
+	Node* currNode = root; 
+		for(int i = 0; i < (int)word.size(); i++){
+			int index = (int)word[i] - (int)'a';	
+			if(currNode->arr[index] == NULL){
+				currNode->arr[index] = new Node;
+			}				
+			currNode = currNode->arr[index];
+		}
+```
+
 Each node also has two flags: isWord and isPrefix.
 	- The isPrefix flag will tell us whether a sequence of letters are an actual prefix to a word 
 	- The isWord flag is what we'll be using to tell us whether the entire sequence of letters is a word
