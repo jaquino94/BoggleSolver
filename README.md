@@ -1,6 +1,6 @@
 A program that will find all possible words on a boggle board.
 
-**NOTE: THIS PROGRAM ONLY USES WORDS THAT DOESN'T CONTAIN ANY SPECIAL CHARACTERS (I.E COMMAS, APOSTROPHESE ETC).**
+**NOTE: THIS PROGRAM ONLY USES WORDS THAT DOESN'T CONTAIN ANY SPECIAL CHARACTERS (I.E COMMAS, APOSTROPHES ETC).**
 
 The program has two major parts: the Dictionary class and the BoggleSolver class.
 
