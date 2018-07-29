@@ -1,5 +1,6 @@
 A program that will find all possible words on a boggle board.
-NOTE: THIS PROGRAM ONLY USES WORDS THAT DOESN'T CONTAIN ANY SPECIAL CHARACTERS (I.E COMMAS, APOSTROPHESE ETC).
+
+**NOTE: THIS PROGRAM ONLY USES WORDS THAT DOESN'T CONTAIN ANY SPECIAL CHARACTERS (I.E COMMAS, APOSTROPHESE ETC).**
 
 The program has two major parts: the Dictionary class and the BoggleSolver class.
 
@@ -39,6 +40,7 @@ The Boggle Solver class utilizes the Dictionary class to find all the possible w
 *Total words found at the end of the program*
 
 ![alt text](https://github.com/jaquino94/BoggleSolver/blob/master/imgs/TotalWordsFound.png "At the end, the program will show how many words are found with the given word")
+
 
 
 
